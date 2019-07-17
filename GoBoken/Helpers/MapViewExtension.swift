@@ -18,16 +18,8 @@ extension MKMapView {
   }
   
   func addAnnotationForLocation(location: Location) -> Void {
-    let geoCoder = CLGeocoder()
-    let address = location.address + ", Hoboken, NJ, 07030"
-    geoCoder.geocodeAddressString(address) { (placemarks, error) in
-      guard let placemarks = placemarks, let coords = placemarks.first?.location else {
-        print("Could not get coords for " + address)
-        return
-      }
-      let annotation = MapAnnotation(location: location, coord: coords)
-      self.addAnnotation(annotation)
-    }
+    let annotation = MapAnnotation(location: location)
+    self.addAnnotation(annotation)
   }
   
   func centerOnLocation(location: Location, regionRadius: CLLocationDistance) -> Void {
