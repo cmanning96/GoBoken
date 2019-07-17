@@ -14,8 +14,13 @@ class MapAnnotation: NSObject, MKAnnotation {
   var coordinate: CLLocationCoordinate2D
   var subtitle: String?
   
-  init(location: Location, coord: CLLocation) {
-    self.coordinate = coord.coordinate
+  init(location: Location) {
+    if let coords = location.coordindates {
+      self.coordinate = coords.coordinate
+    } else {
+      print("No coordinates for " + location.name + " upon initializing MapAnnotation")
+      self.coordinate = CLLocationCoordinate2D()
+    }
     self.location = location
     self.subtitle = location.name
   }
