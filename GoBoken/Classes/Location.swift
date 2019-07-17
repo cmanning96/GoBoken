@@ -16,27 +16,15 @@ class Location: Hashable {
   var image: UIImage!
   var keywords: [LocationKeywords]!
   var description: String!
+  var coordindates: CLLocationCoordinate2D!
   
-  var coordindates: CLLocation?
-  
-  init(name: String, address: String, image: UIImage, keywords: [LocationKeywords], description: String) {
+  init(name: String, address: String, image: UIImage, keywords: [LocationKeywords], description: String, coords: CLLocationCoordinate2D) {
     self.name = name
     self.address = address + ", Hoboken, NJ 07030"
     self.image = image
     self.keywords = keywords
     self.description = description
-    setAddress()
-  }
-  
-  private func setAddress() -> Void {
-    let geoCoder = CLGeocoder()
-    geoCoder.geocodeAddressString(address) { (placemarks, error) in
-      guard let placemarks = placemarks, let coords = placemarks.first?.location else {
-        print("Could not get coords for " + self.address)
-        return
-      }
-      self.coordindates = coords
-    }
+    self.coordindates = coords
   }
   
   func getKeywordString() -> String {
