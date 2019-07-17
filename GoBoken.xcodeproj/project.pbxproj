@@ -20,6 +20,7 @@
 		AA5E6A5E22DD506500F5982B /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E6A5D22DD506500F5982B /* MapAnnotation.swift */; };
 		AA5E6A6322DD5F6F00F5982B /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E6A6222DD5F6F00F5982B /* MapViewExtension.swift */; };
 		AAFC4DEC22DF6BC4009D6ECB /* LocationKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DEB22DF6BC4009D6ECB /* LocationKeywords.swift */; };
+		AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AA5E6A5D22DD506500F5982B /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 		AA5E6A6222DD5F6F00F5982B /* MapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
 		AAFC4DEB22DF6BC4009D6ECB /* LocationKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationKeywords.swift; sourceTree = "<group>"; };
+		AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				AA5E6A4922DCE2FB00F5982B /* LocationTableViewCell.swift */,
 				AA5E6A5D22DD506500F5982B /* MapAnnotation.swift */,
+				AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				AA5E6A5A22DCF03100F5982B /* LocationViewController.swift in Sources */,
 				AA5E6A4E22DCE31300F5982B /* Location.swift in Sources */,
 				AA5E6A3822DCE2D200F5982B /* AppDelegate.swift in Sources */,
+				AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */,
 				AA5E6A5C22DD343700F5982B /* MapViewController.swift in Sources */,
 				AA5E6A5E22DD506500F5982B /* MapAnnotation.swift in Sources */,
 			);
