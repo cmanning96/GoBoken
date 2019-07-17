@@ -21,6 +21,8 @@
 		AA5E6A6322DD5F6F00F5982B /* MapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E6A6222DD5F6F00F5982B /* MapViewExtension.swift */; };
 		AAFC4DEC22DF6BC4009D6ECB /* LocationKeywords.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DEB22DF6BC4009D6ECB /* LocationKeywords.swift */; };
 		AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */; };
+		AAFC4DF022DFBDFF009D6ECB /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */; };
+		AAFC4DF222DFC7A2009D6ECB /* UserFilterPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DF122DFC7A2009D6ECB /* UserFilterPreferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		AA5E6A6222DD5F6F00F5982B /* MapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewExtension.swift; sourceTree = "<group>"; };
 		AAFC4DEB22DF6BC4009D6ECB /* LocationKeywords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationKeywords.swift; sourceTree = "<group>"; };
 		AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		AAFC4DF122DFC7A2009D6ECB /* UserFilterPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterPreferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				AA5E6A4B22DCE30800F5982B /* TableViewController.swift */,
 				AA5E6A5922DCF03100F5982B /* LocationViewController.swift */,
 				AA5E6A5B22DD343700F5982B /* MapViewController.swift */,
+				AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 				AA5E6A5722DCE3DF00F5982B /* SampleLocations.swift */,
 				AA5E6A6222DD5F6F00F5982B /* MapViewExtension.swift */,
 				AAFC4DEB22DF6BC4009D6ECB /* LocationKeywords.swift */,
+				AAFC4DF122DFC7A2009D6ECB /* UserFilterPreferences.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -197,9 +203,11 @@
 				AA5E6A5822DCE3DF00F5982B /* SampleLocations.swift in Sources */,
 				AA5E6A6322DD5F6F00F5982B /* MapViewExtension.swift in Sources */,
 				AAFC4DEC22DF6BC4009D6ECB /* LocationKeywords.swift in Sources */,
+				AAFC4DF222DFC7A2009D6ECB /* UserFilterPreferences.swift in Sources */,
 				AA5E6A4A22DCE2FB00F5982B /* LocationTableViewCell.swift in Sources */,
 				AA5E6A4C22DCE30900F5982B /* TableViewController.swift in Sources */,
 				AA5E6A5A22DCF03100F5982B /* LocationViewController.swift in Sources */,
+				AAFC4DF022DFBDFF009D6ECB /* FilterViewController.swift in Sources */,
 				AA5E6A4E22DCE31300F5982B /* Location.swift in Sources */,
 				AA5E6A3822DCE2D200F5982B /* AppDelegate.swift in Sources */,
 				AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */,
