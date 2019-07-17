@@ -28,14 +28,22 @@ class ToggleButton: UIButton {
   
   @objc private func handleTap() -> Void {
     if isOn {
-      isOn = false
-      self.backgroundColor = offBackgroundColor
-      self.titleLabel?.textColor = offTextColor
+      setToOff()
     } else {
-      isOn = true
-      self.backgroundColor = onBackgroundColor
-      self.titleLabel?.textColor = onTextColor
+      setToOn()
     }
+  }
+  
+  func setToOn() -> Void {
+    isOn = true
+    self.backgroundColor = onBackgroundColor
+    self.titleLabel?.textColor = onTextColor
+  }
+  
+  func setToOff() -> Void {
+    isOn = false
+    self.backgroundColor = offBackgroundColor
+    self.titleLabel?.textColor = offTextColor
   }
   
   private func addBorder() -> Void {
