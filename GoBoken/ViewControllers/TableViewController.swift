@@ -14,7 +14,12 @@ class TableViewController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    displayedLocations = SampleLocations.getLocations(withKeyword: nil)
+//    setTableData()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    setTableData()
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,6 +38,11 @@ class TableViewController: UITableViewController {
     let vc = storyboard?.instantiateViewController(withIdentifier: "locationDisplay") as! LocationViewController
     vc.location = location
     present(vc, animated: true)
+  }
+  
+  private func setTableData() -> Void {
+    displayedLocations = SampleLocations.getLocationsThatMatchUserPreferences()
+    tableView.reloadData()
   }
 
 }

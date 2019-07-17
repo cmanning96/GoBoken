@@ -20,7 +20,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
   }
   
   func addAllAnnotations() -> Void {
-    let places = SampleLocations.getLocations(withKeyword: nil)
+    let places = SampleLocations.getLocationsThatMatchUserPreferences()
     for location in places {
       mapView.addAnnotationForLocation(location: location)
     }
