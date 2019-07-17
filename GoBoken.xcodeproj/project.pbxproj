@@ -23,6 +23,7 @@
 		AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */; };
 		AAFC4DF022DFBDFF009D6ECB /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */; };
 		AAFC4DF222DFC7A2009D6ECB /* UserFilterPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DF122DFC7A2009D6ECB /* UserFilterPreferences.swift */; };
+		AAFC4DF422DFD85C009D6ECB /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DF322DFD85C009D6ECB /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		AAFC4DF122DFC7A2009D6ECB /* UserFilterPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterPreferences.swift; sourceTree = "<group>"; };
+		AAFC4DF322DFD85C009D6ECB /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		AA5E6A5122DCE39300F5982B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AAFC4DF322DFD85C009D6ECB /* InitialViewController.swift */,
 				AA5E6A4B22DCE30800F5982B /* TableViewController.swift */,
 				AA5E6A5922DCF03100F5982B /* LocationViewController.swift */,
 				AA5E6A5B22DD343700F5982B /* MapViewController.swift */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5E6A5822DCE3DF00F5982B /* SampleLocations.swift in Sources */,
+				AAFC4DF422DFD85C009D6ECB /* InitialViewController.swift in Sources */,
 				AA5E6A6322DD5F6F00F5982B /* MapViewExtension.swift in Sources */,
 				AAFC4DEC22DF6BC4009D6ECB /* LocationKeywords.swift in Sources */,
 				AAFC4DF222DFC7A2009D6ECB /* UserFilterPreferences.swift in Sources */,
