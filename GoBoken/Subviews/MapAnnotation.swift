@@ -16,7 +16,7 @@ class MapAnnotation: NSObject, MKAnnotation {
   
   init(location: Location) {
     if let coords = location.coordindates {
-      self.coordinate = coords.coordinate
+      self.coordinate = coords
     } else {
       print("No coordinates for " + location.name + " upon initializing MapAnnotation")
       self.coordinate = CLLocationCoordinate2D()
