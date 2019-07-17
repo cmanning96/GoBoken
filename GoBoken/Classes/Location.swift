@@ -14,12 +14,12 @@ class Location: Hashable {
   var name: String!
   var address: String!
   var image: UIImage!
-  var keywords: [String]!
+  var keywords: [LocationKeywords]!
   var description: String!
   
   var coordindates: CLLocation?
   
-  init(name: String, address: String, image: UIImage, keywords: [String], description: String) {
+  init(name: String, address: String, image: UIImage, keywords: [LocationKeywords], description: String) {
     self.name = name
     self.address = address + ", Hoboken, NJ 07030"
     self.image = image
@@ -28,7 +28,7 @@ class Location: Hashable {
     setAddress()
   }
   
-  func setAddress() -> Void {
+  private func setAddress() -> Void {
     let geoCoder = CLGeocoder()
     geoCoder.geocodeAddressString(address) { (placemarks, error) in
       guard let placemarks = placemarks, let coords = placemarks.first?.location else {
@@ -37,6 +37,29 @@ class Location: Hashable {
       }
       self.coordindates = coords
     }
+  }
+  
+  func getKeywordString() -> String {
+    let keywordDict: [LocationKeywords:String] = [
+      LocationKeywords.coffee: "Coffee",
+      LocationKeywords.dining: "Dining",
+      LocationKeywords.hotel: "Hotel",
+      LocationKeywords.landmark: "Landmark"
+    ]
+    var string = ""
+    for index in 0..<keywords.count - 1 {
+      let key = keywords[index]
+      guard let keyString = keywordDict[key] else {
+        print("No keyword string has been assigned for one of the keywords for " + self.name)
+        return ""
+      }
+      string += keyString + ", "
+    }
+    guard let lastWord = keywordDict[keywords[keywords.count - 1]] else {
+      print("No keyword string has been assigned for one of the keywords for " + self.name)
+      return ""
+    }
+    return string + lastWord
   }
   
   static func == (lhs: Location, rhs: Location) -> Bool {
