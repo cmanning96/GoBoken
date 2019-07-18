@@ -126,7 +126,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4I-3F-Fmh">
-                                <rect key="frame" x="157" y="576" width="60" height="30"/>
+                                <rect key="frame" x="157.5" y="576" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="67O-Ii-bec"/>
                                     <constraint firstAttribute="height" constant="30" id="8Y8-r4-XaL"/>
@@ -294,17 +294,14 @@
                                                 </constraints>
                                             </mapView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K1y-vb-2Yc">
-                                                <rect key="frame" x="24" y="436" width="327" height="300"/>
+                                                <rect key="frame" x="24" y="466" width="327" height="302"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="GNE-J4-A8x"/>
-                                                </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzK-uK-7WI">
-                                                <rect key="frame" x="8" y="404" width="359" height="24"/>
+                                                <rect key="frame" x="8" y="434" width="359" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="ENg-tK-3jB"/>
                                                 </constraints>
@@ -313,7 +310,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPm-Ad-6nZ">
-                                                <rect key="frame" x="8" y="368" width="359" height="36"/>
+                                                <rect key="frame" x="8" y="398" width="359" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="KHe-Q9-Eqb"/>
                                                 </constraints>
@@ -333,7 +330,7 @@
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iFA-9T-3jz">
-                                                <rect key="frame" x="67.5" y="120" width="240" height="240"/>
+                                                <rect key="frame" x="67.5" y="150" width="240" height="240"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="CA4-AK-BUg"/>
                                                     <constraint firstAttribute="width" secondItem="iFA-9T-3jz" secondAttribute="height" multiplier="1:1" id="vuU-dc-soY"/>
@@ -352,9 +349,10 @@
                                             <constraint firstItem="JPm-Ad-6nZ" firstAttribute="top" secondItem="iFA-9T-3jz" secondAttribute="bottom" constant="8" id="Xd0-ae-G01"/>
                                             <constraint firstItem="gbu-iy-34v" firstAttribute="top" secondItem="bdd-O6-Clt" secondAttribute="top" constant="36" id="ZXz-3p-xRk"/>
                                             <constraint firstItem="gbu-iy-34v" firstAttribute="leading" secondItem="bdd-O6-Clt" secondAttribute="leading" constant="8" id="aGa-0s-Hin"/>
-                                            <constraint firstItem="iFA-9T-3jz" firstAttribute="top" secondItem="iDY-KJ-zOf" secondAttribute="top" constant="46" id="aHd-4a-hXZ"/>
+                                            <constraint firstItem="iFA-9T-3jz" firstAttribute="top" secondItem="bdd-O6-Clt" secondAttribute="top" constant="150" id="aHd-4a-hXZ"/>
                                             <constraint firstAttribute="trailing" secondItem="iDY-KJ-zOf" secondAttribute="trailing" constant="8" id="bIG-3Z-8Ss"/>
                                             <constraint firstItem="K1y-vb-2Yc" firstAttribute="top" secondItem="dzK-uK-7WI" secondAttribute="bottom" constant="8" id="bha-SA-BMb"/>
+                                            <constraint firstAttribute="bottom" secondItem="K1y-vb-2Yc" secondAttribute="bottom" constant="32" id="cZH-lG-lgr"/>
                                             <constraint firstItem="iDY-KJ-zOf" firstAttribute="leading" secondItem="bdd-O6-Clt" secondAttribute="leading" id="dcD-rc-OsR"/>
                                             <constraint firstItem="JPm-Ad-6nZ" firstAttribute="leading" secondItem="bdd-O6-Clt" secondAttribute="leading" constant="8" id="fh9-Iv-Bz4"/>
                                             <constraint firstItem="iFA-9T-3jz" firstAttribute="centerX" secondItem="bdd-O6-Clt" secondAttribute="centerX" id="qVs-sA-IQb"/>
@@ -425,8 +423,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="AI8-uv-cBy" kind="relationship" relationship="viewControllers" id="cWt-B5-DH3"/>
-                        <segue destination="ZZK-LE-gVc" kind="relationship" relationship="viewControllers" id="nLB-Fo-vyU"/>
+                        <segue destination="ZZK-LE-gVc" kind="relationship" relationship="viewControllers" id="I3W-lj-mHX"/>
+                        <segue destination="AI8-uv-cBy" kind="relationship" relationship="viewControllers" id="52m-Vy-VXe"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IU5-Ph-VFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
