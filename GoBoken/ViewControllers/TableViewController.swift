@@ -14,7 +14,6 @@ class TableViewController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-//    setTableData()
   }
   
   override func viewWillAppear(_ animated: Bool) {
