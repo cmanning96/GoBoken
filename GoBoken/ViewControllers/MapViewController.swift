@@ -16,10 +16,16 @@ class MapViewController: UIViewController, MKMapViewDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     mapView.centerOnHoboken()
-    addAllAnnotations()
+    addAnnotations()
   }
   
-  func addAllAnnotations() -> Void {
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    mapView.removeAnnotations(mapView.annotations)
+    addAnnotations()
+  }
+  
+  func addAnnotations() -> Void {
     let places = SampleLocations.getLocationsThatMatchUserPreferences()
     for location in places {
       mapView.addAnnotationForLocation(location: location)
