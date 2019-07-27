@@ -1,0 +1,391 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["So9MKMapViewC", ""]
+- ["So9MKMapViewC", "centerOnHoboken"]
+- ["So9MKMapViewC", "addAnnotationForLocation"]
+- ["So9MKMapViewC", "centerOnLocation"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- !private "BooleanLiteralType"
+- !private "CLGeocoder"
+- !private "CLLocation"
+- "CLLocationDistance"
+- "Location"
+- !private "MKCoordinateRegion"
+- "MKMapView"
+- !private "MapAnnotation"
+- "Void"
+- !private "print"
+depends-member:
+- !private ["Sa", "first"]
+- !private ["SK", "first"]
+- !private ["So15CALayerDelegateP", "CLGeocoder"]
+- !private ["So15CALayerDelegateP", "CLLocation"]
+- !private ["So15CALayerDelegateP", "MKCoordinateRegion"]
+- !private ["So15CALayerDelegateP", "MapAnnotation"]
+- !private ["So15CALayerDelegateP", "addAnnotation"]
+- !private ["So15CALayerDelegateP", "print"]
+- !private ["So15CALayerDelegateP", "setRegion"]
+- !private ["So10CLGeocoderC", "geocodeAddressString"]
+- !private ["So10CLGeocoderC", "init"]
+- !private ["So10CLLocationC", "coordinate"]
+- !private ["So10CLLocationC", "init"]
+- !private ["So11CLPlacemarkC", "location"]
+- !private ["s7CVarArgP", "CLGeocoder"]
+- !private ["s7CVarArgP", "CLLocation"]
+- !private ["s7CVarArgP", "MKCoordinateRegion"]
+- !private ["s7CVarArgP", "MapAnnotation"]
+- !private ["s7CVarArgP", "addAnnotation"]
+- !private ["s7CVarArgP", "coordinate"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "geocodeAddressString"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "location"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "setRegion"]
+- !private ["Sl", "first"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "CLGeocoder"]
+- !private ["s28CustomDebugStringConvertibleP", "CLLocation"]
+- !private ["s28CustomDebugStringConvertibleP", "MKCoordinateRegion"]
+- !private ["s28CustomDebugStringConvertibleP", "MapAnnotation"]
+- !private ["s28CustomDebugStringConvertibleP", "addAnnotation"]
+- !private ["s28CustomDebugStringConvertibleP", "coordinate"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "geocodeAddressString"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "location"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "setRegion"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s23CustomStringConvertibleP", "CLGeocoder"]
+- !private ["s23CustomStringConvertibleP", "CLLocation"]
+- !private ["s23CustomStringConvertibleP", "MKCoordinateRegion"]
+- !private ["s23CustomStringConvertibleP", "MapAnnotation"]
+- !private ["s23CustomStringConvertibleP", "addAnnotation"]
+- !private ["s23CustomStringConvertibleP", "coordinate"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "geocodeAddressString"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "location"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "setRegion"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["Se", "first"]
+- !private ["SE", "first"]
+- !private ["SQ", "CLGeocoder"]
+- !private ["SQ", "CLLocation"]
+- !private ["SQ", "MKCoordinateRegion"]
+- !private ["SQ", "MapAnnotation"]
+- !private ["SQ", "addAnnotation"]
+- !private ["SQ", "address"]
+- !private ["SQ", "coordinate"]
+- !private ["SQ", "first"]
+- !private ["SQ", "geocodeAddressString"]
+- !private ["SQ", "init"]
+- !private ["SQ", "location"]
+- !private ["SQ", "print"]
+- !private ["SQ", "setRegion"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["SH", "CLGeocoder"]
+- !private ["SH", "CLLocation"]
+- !private ["SH", "MKCoordinateRegion"]
+- !private ["SH", "MapAnnotation"]
+- !private ["SH", "addAnnotation"]
+- !private ["SH", "address"]
+- !private ["SH", "coordinate"]
+- !private ["SH", "first"]
+- !private ["SH", "geocodeAddressString"]
+- !private ["SH", "init"]
+- !private ["SH", "location"]
+- !private ["SH", "print"]
+- !private ["SH", "setRegion"]
+- !private ["7GoBoken8LocationC", "address"]
+- !private ["So12MKAnnotationP", "init"]
+- !private ["So18MKCoordinateRegiona", "init"]
+- !private ["So9MKMapViewC", "CLGeocoder"]
+- !private ["So9MKMapViewC", "CLLocation"]
+- ["So9MKMapViewC", "CLLocationDistance"]
+- ["So9MKMapViewC", "Location"]
+- !private ["So9MKMapViewC", "MKCoordinateRegion"]
+- !private ["So9MKMapViewC", "MapAnnotation"]
+- ["So9MKMapViewC", "Void"]
+- !private ["So9MKMapViewC", "addAnnotation"]
+- ["So9MKMapViewC", "addAnnotationForLocation"]
+- ["So9MKMapViewC", "centerOnHoboken"]
+- ["So9MKMapViewC", "centerOnLocation"]
+- !private ["So9MKMapViewC", "print"]
+- !private ["So9MKMapViewC", "setRegion"]
+- !private ["7GoBoken13MapAnnotationC", "deinit"]
+- !private ["7GoBoken13MapAnnotationC", "init"]
+- !private ["SM", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["So8NSCodingP", "CLGeocoder"]
+- !private ["So8NSCodingP", "CLLocation"]
+- !private ["So8NSCodingP", "MKCoordinateRegion"]
+- !private ["So8NSCodingP", "MapAnnotation"]
+- !private ["So8NSCodingP", "addAnnotation"]
+- !private ["So8NSCodingP", "coordinate"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "location"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "setRegion"]
+- !private ["So9NSCopyingP", "coordinate"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "location"]
+- !private ["So8NSObjectC", "CLGeocoder"]
+- !private ["So8NSObjectC", "CLLocation"]
+- ["So8NSObjectC", "CLLocationDistance"]
+- ["So8NSObjectC", "Location"]
+- !private ["So8NSObjectC", "MKCoordinateRegion"]
+- !private ["So8NSObjectC", "MapAnnotation"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "addAnnotation"]
+- ["So8NSObjectC", "addAnnotationForLocation"]
+- ["So8NSObjectC", "centerOnHoboken"]
+- ["So8NSObjectC", "centerOnLocation"]
+- !private ["So8NSObjectC", "coordinate"]
+- !private ["So8NSObjectC", "geocodeAddressString"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "location"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "setRegion"]
+- !private ["So8NSObjectP", "CLGeocoder"]
+- !private ["So8NSObjectP", "CLLocation"]
+- !private ["So8NSObjectP", "MKCoordinateRegion"]
+- !private ["So8NSObjectP", "MapAnnotation"]
+- !private ["So8NSObjectP", "addAnnotation"]
+- !private ["So8NSObjectP", "coordinate"]
+- !private ["So8NSObjectP", "geocodeAddressString"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "location"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "setRegion"]
+- !private ["So14NSSecureCodingP", "coordinate"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "location"]
+- !private ["Sk", "first"]
+- !private ["Sm", "first"]
+- !private ["ST", "first"]
+- !private ["So29UIAccessibilityIdentificationP", "CLGeocoder"]
+- !private ["So29UIAccessibilityIdentificationP", "CLLocation"]
+- !private ["So29UIAccessibilityIdentificationP", "MKCoordinateRegion"]
+- !private ["So29UIAccessibilityIdentificationP", "MapAnnotation"]
+- !private ["So29UIAccessibilityIdentificationP", "addAnnotation"]
+- !private ["So29UIAccessibilityIdentificationP", "print"]
+- !private ["So29UIAccessibilityIdentificationP", "setRegion"]
+- !private ["So12UIAppearanceP", "CLGeocoder"]
+- !private ["So12UIAppearanceP", "CLLocation"]
+- !private ["So12UIAppearanceP", "MKCoordinateRegion"]
+- !private ["So12UIAppearanceP", "MapAnnotation"]
+- !private ["So12UIAppearanceP", "addAnnotation"]
+- !private ["So12UIAppearanceP", "print"]
+- !private ["So12UIAppearanceP", "setRegion"]
+- !private ["So21UIAppearanceContainerP", "CLGeocoder"]
+- !private ["So21UIAppearanceContainerP", "CLLocation"]
+- !private ["So21UIAppearanceContainerP", "MKCoordinateRegion"]
+- !private ["So21UIAppearanceContainerP", "MapAnnotation"]
+- !private ["So21UIAppearanceContainerP", "addAnnotation"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "setRegion"]
+- !private ["So17UICoordinateSpaceP", "CLGeocoder"]
+- !private ["So17UICoordinateSpaceP", "CLLocation"]
+- !private ["So17UICoordinateSpaceP", "MKCoordinateRegion"]
+- !private ["So17UICoordinateSpaceP", "MapAnnotation"]
+- !private ["So17UICoordinateSpaceP", "addAnnotation"]
+- !private ["So17UICoordinateSpaceP", "print"]
+- !private ["So17UICoordinateSpaceP", "setRegion"]
+- !private ["So13UIDynamicItemP", "CLGeocoder"]
+- !private ["So13UIDynamicItemP", "CLLocation"]
+- !private ["So13UIDynamicItemP", "MKCoordinateRegion"]
+- !private ["So13UIDynamicItemP", "MapAnnotation"]
+- !private ["So13UIDynamicItemP", "addAnnotation"]
+- !private ["So13UIDynamicItemP", "print"]
+- !private ["So13UIDynamicItemP", "setRegion"]
+- !private ["So18UIFocusEnvironmentP", "CLGeocoder"]
+- !private ["So18UIFocusEnvironmentP", "CLLocation"]
+- !private ["So18UIFocusEnvironmentP", "MKCoordinateRegion"]
+- !private ["So18UIFocusEnvironmentP", "MapAnnotation"]
+- !private ["So18UIFocusEnvironmentP", "addAnnotation"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "setRegion"]
+- !private ["So11UIFocusItemP", "CLGeocoder"]
+- !private ["So11UIFocusItemP", "CLLocation"]
+- !private ["So11UIFocusItemP", "MKCoordinateRegion"]
+- !private ["So11UIFocusItemP", "MapAnnotation"]
+- !private ["So11UIFocusItemP", "addAnnotation"]
+- !private ["So11UIFocusItemP", "print"]
+- !private ["So11UIFocusItemP", "setRegion"]
+- !private ["So20UIFocusItemContainerP", "CLGeocoder"]
+- !private ["So20UIFocusItemContainerP", "CLLocation"]
+- !private ["So20UIFocusItemContainerP", "MKCoordinateRegion"]
+- !private ["So20UIFocusItemContainerP", "MapAnnotation"]
+- !private ["So20UIFocusItemContainerP", "addAnnotation"]
+- !private ["So20UIFocusItemContainerP", "print"]
+- !private ["So20UIFocusItemContainerP", "setRegion"]
+- !private ["So30UIPasteConfigurationSupportingP", "CLGeocoder"]
+- !private ["So30UIPasteConfigurationSupportingP", "CLLocation"]
+- !private ["So30UIPasteConfigurationSupportingP", "MKCoordinateRegion"]
+- !private ["So30UIPasteConfigurationSupportingP", "MapAnnotation"]
+- !private ["So30UIPasteConfigurationSupportingP", "addAnnotation"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "setRegion"]
+- !private ["So11UIResponderC", "CLGeocoder"]
+- !private ["So11UIResponderC", "CLLocation"]
+- ["So11UIResponderC", "CLLocationDistance"]
+- ["So11UIResponderC", "Location"]
+- !private ["So11UIResponderC", "MKCoordinateRegion"]
+- !private ["So11UIResponderC", "MapAnnotation"]
+- ["So11UIResponderC", "Void"]
+- !private ["So11UIResponderC", "addAnnotation"]
+- ["So11UIResponderC", "addAnnotationForLocation"]
+- ["So11UIResponderC", "centerOnHoboken"]
+- ["So11UIResponderC", "centerOnLocation"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "setRegion"]
+- !private ["So30UIResponderStandardEditActionsP", "CLGeocoder"]
+- !private ["So30UIResponderStandardEditActionsP", "CLLocation"]
+- !private ["So30UIResponderStandardEditActionsP", "MKCoordinateRegion"]
+- !private ["So30UIResponderStandardEditActionsP", "MapAnnotation"]
+- !private ["So30UIResponderStandardEditActionsP", "addAnnotation"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "setRegion"]
+- !private ["So18UITraitEnvironmentP", "CLGeocoder"]
+- !private ["So18UITraitEnvironmentP", "CLLocation"]
+- !private ["So18UITraitEnvironmentP", "MKCoordinateRegion"]
+- !private ["So18UITraitEnvironmentP", "MapAnnotation"]
+- !private ["So18UITraitEnvironmentP", "addAnnotation"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "setRegion"]
+- !private ["So23UIUserActivityRestoringP", "CLGeocoder"]
+- !private ["So23UIUserActivityRestoringP", "CLLocation"]
+- !private ["So23UIUserActivityRestoringP", "MKCoordinateRegion"]
+- !private ["So23UIUserActivityRestoringP", "MapAnnotation"]
+- !private ["So23UIUserActivityRestoringP", "addAnnotation"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "setRegion"]
+- !private ["So6UIViewC", "CLGeocoder"]
+- !private ["So6UIViewC", "CLLocation"]
+- ["So6UIViewC", "CLLocationDistance"]
+- ["So6UIViewC", "Location"]
+- !private ["So6UIViewC", "MKCoordinateRegion"]
+- !private ["So6UIViewC", "MapAnnotation"]
+- ["So6UIViewC", "Void"]
+- !private ["So6UIViewC", "addAnnotation"]
+- ["So6UIViewC", "addAnnotationForLocation"]
+- ["So6UIViewC", "centerOnHoboken"]
+- ["So6UIViewC", "centerOnLocation"]
+- !private ["So6UIViewC", "print"]
+- !private ["So6UIViewC", "setRegion"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CLGeocoder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CLLocation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MKCoordinateRegion"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MapAnnotation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addAnnotation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "coordinate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "geocodeAddressString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "location"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setRegion"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "CLGeocoder"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "CLLocation"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "MKCoordinateRegion"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "MapAnnotation"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addAnnotation"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "print"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setRegion"]
+depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- !private "So10CLGeocoderC"
+- !private "So10CLLocationC"
+- !private "So11CLPlacemarkC"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "7GoBoken8LocationC"
+- !private "So12MKAnnotationP"
+- !private "So18MKCoordinateRegiona"
+- "So9MKMapViewC"
+- !private "7GoBoken13MapAnnotationC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "Sk"
+- !private "Sm"
+- !private "ST"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- "So6UIViewC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "0b726cfea704699dcd2e939e250d0c2e"
