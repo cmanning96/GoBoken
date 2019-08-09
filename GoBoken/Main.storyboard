@@ -32,7 +32,8 @@
                         <viewLayoutGuide key="safeArea" id="cTm-Ar-eAF"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="zMm-ju-6l9">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" id="EcS-HU-gA8">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" image="filter" id="EcS-HU-gA8">
+                            <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="-5"/>
                             <connections>
                                 <segue destination="hVz-LJ-abU" kind="show" id="bFX-Ca-Cd8"/>
                             </connections>
@@ -451,6 +452,9 @@
             <point key="canvasLocation" x="1836" y="791"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="filter" width="50" height="50"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bFX-Ca-Cd8"/>
     </inferredMetricsTieBreakers>

@@ -17,7 +17,16 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     super.viewDidLoad()
     mapView.centerOnHoboken()
     addAnnotations()
+    setupNavigationBarItems()
   }
+    
+    private func setupNavigationBarItems() {
+        let image = UIImage(named: "app_logo")
+        let titleImageView = UIImageView(image : image)
+        titleImageView.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
+        titleImageView.contentMode = .scaleAspectFit
+        navigationItem.titleView = titleImageView
+    }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
