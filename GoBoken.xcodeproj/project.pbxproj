@@ -23,6 +23,7 @@
 		AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */; };
 		AAFC4DF022DFBDFF009D6ECB /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */; };
 		AAFC4DF222DFC7A2009D6ECB /* UserFilterPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC4DF122DFC7A2009D6ECB /* UserFilterPreferences.swift */; };
+		F7B0DE8423007E41002500AE /* CreateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DE8323007E41002500AE /* CreateProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AAFC4DED22DFBB0F009D6ECB /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		AAFC4DF122DFC7A2009D6ECB /* UserFilterPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterPreferences.swift; sourceTree = "<group>"; };
+		F7B0DE8323007E41002500AE /* CreateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				AA5E6A5922DCF03100F5982B /* LocationViewController.swift */,
 				AA5E6A5B22DD343700F5982B /* MapViewController.swift */,
 				AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */,
+				F7B0DE8323007E41002500AE /* CreateProfileController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				AA5E6A4E22DCE31300F5982B /* Location.swift in Sources */,
 				AA5E6A3822DCE2D200F5982B /* AppDelegate.swift in Sources */,
 				AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */,
+				F7B0DE8423007E41002500AE /* CreateProfileController.swift in Sources */,
 				AA5E6A5C22DD343700F5982B /* MapViewController.swift in Sources */,
 				AA5E6A5E22DD506500F5982B /* MapAnnotation.swift in Sources */,
 			);

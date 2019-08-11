@@ -13,7 +13,7 @@
         <!--Map-->
         <scene sceneID="Nhm-3c-GVX">
             <objects>
-                <viewController title="Map" id="Qrd-3H-gtQ" customClass="MapViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" title="Map" id="Qrd-3H-gtQ" customClass="MapViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gvF-0T-rcw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,9 +25,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cTm-Ar-eAF" firstAttribute="bottom" secondItem="aZM-wq-T7L" secondAttribute="bottom" constant="20" id="0ab-UT-GW5"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="top" secondItem="cTm-Ar-eAF" secondAttribute="top" id="4zD-9r-8ah"/>
+                            <constraint firstItem="cTm-Ar-eAF" firstAttribute="bottom" secondItem="aZM-wq-T7L" secondAttribute="bottom" id="7SF-3e-2nI"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="leading" secondItem="cTm-Ar-eAF" secondAttribute="leading" constant="5" id="CAJ-Jc-cwT"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="trailing" secondItem="cTm-Ar-eAF" secondAttribute="trailing" id="Ge2-jG-J4F"/>
+                            <constraint firstItem="cTm-Ar-eAF" firstAttribute="bottom" secondItem="aZM-wq-T7L" secondAttribute="bottom" constant="20" id="IJh-bP-9j2"/>
                             <constraint firstItem="aZM-wq-T7L" firstAttribute="leading" secondItem="cTm-Ar-eAF" secondAttribute="leading" id="WMp-Jg-dVe"/>
+                            <constraint firstItem="cTm-Ar-eAF" firstAttribute="bottom" secondItem="aZM-wq-T7L" secondAttribute="bottom" id="a1K-mh-cnf"/>
                             <constraint firstItem="aZM-wq-T7L" firstAttribute="trailing" secondItem="cTm-Ar-eAF" secondAttribute="trailing" id="bRq-e6-2tG"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="top" secondItem="cTm-Ar-eAF" secondAttribute="top" constant="64" id="eCJ-sy-nRm"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="bottom" secondItem="cTm-Ar-eAF" secondAttribute="bottom" constant="5" id="lPj-d5-bv0"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="trailing" secondItem="cTm-Ar-eAF" secondAttribute="trailing" constant="5" id="lxU-1k-AQp"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="leading" secondItem="cTm-Ar-eAF" secondAttribute="leading" id="ugR-t8-83b"/>
                             <constraint firstItem="aZM-wq-T7L" firstAttribute="top" secondItem="cTm-Ar-eAF" secondAttribute="top" id="vRa-5q-xpF"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="trailing" secondItem="cTm-Ar-eAF" secondAttribute="trailing" id="w2n-xY-5vH"/>
+                            <constraint firstItem="aZM-wq-T7L" firstAttribute="leading" secondItem="cTm-Ar-eAF" secondAttribute="leading" id="zM1-bi-6Ud"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cTm-Ar-eAF"/>
                     </view>
@@ -45,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s0t-2h-8YG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2756" y="791"/>
+            <point key="canvasLocation" x="2756" y="790.25487256371821"/>
         </scene>
         <!--Filter-->
         <scene sceneID="S2Y-PS-pNA">
@@ -186,7 +198,7 @@
         <!--Table-->
         <scene sceneID="44f-iv-wMZ">
             <objects>
-                <tableViewController id="hDJ-Kk-Nft" customClass="TableViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableViewController" id="hDJ-Kk-Nft" customClass="TableViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ibS-eo-SaW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,7 +275,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Table" id="HUf-Cf-HgH">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" id="XAJ-Mh-DFJ">
+                        <barButtonItem key="rightBarButtonItem" title="Filter" image="filter" id="XAJ-Mh-DFJ">
+                            <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="-5"/>
                             <connections>
                                 <segue destination="hVz-LJ-abU" kind="show" id="AUH-5x-MIs"/>
                             </connections>
@@ -413,6 +426,97 @@
             </objects>
             <point key="canvasLocation" x="1836" y="72.413793103448285"/>
         </scene>
+        <!--Create Profile View Controller-->
+        <scene sceneID="eDL-VJ-uNO">
+            <objects>
+                <viewController storyboardIdentifier="CreateProfileViewController" id="jeC-lP-sje" customClass="CreateProfileViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rci-nc-f85">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xJK-8O-BgS">
+                                <rect key="frame" x="67" y="75" width="240" height="538"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Chs-qd-VtO">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="200"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="CQ8-C3-DrJ">
+                                        <rect key="frame" x="0.0" y="230" width="240" height="308"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yoj-rP-0kc">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="61"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Create Profile">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.36745378319999999" blue="0.63495912180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" size="21" name="Futura-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="EJx-2Z-5lZ">
+                                                <rect key="frame" x="0.0" y="101" width="240" height="132"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="847-DY-BgW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="SaveProfile:" destination="jeC-lP-sje" eventType="editingDidEnd" id="yDK-ak-aFP"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYe-yQ-h7l">
+                                                        <rect key="frame" x="0.0" y="52" width="240" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tGE-rB-Onv">
+                                                        <rect key="frame" x="0.0" y="104" width="240" height="29"/>
+                                                        <segments>
+                                                            <segment title="Male"/>
+                                                            <segment title="Female"/>
+                                                        </segments>
+                                                        <color key="tintColor" red="0.01096656627" green="0.38371263370000003" blue="0.63495912180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvE-6U-RgN">
+                                                <rect key="frame" x="0.0" y="273" width="240" height="35"/>
+                                                <color key="backgroundColor" red="0.010966566266964569" green="0.3837126336780789" blue="0.63495912180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="tintColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <state key="normal" title="Continue">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SaveProfile:" destination="jeC-lP-sje" eventType="touchUpInside" id="KpQ-Qg-Xw7"/>
+                                                    <segue destination="coL-cy-HLf" kind="show" id="k34-wt-23h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oc8-T8-fqF"/>
+                    </view>
+                    <connections>
+                        <outlet property="Age" destination="NYe-yQ-h7l" id="JF5-1R-baa"/>
+                        <outlet property="Gender" destination="tGE-rB-Onv" id="SwG-FX-VFW"/>
+                        <outlet property="Name" destination="847-DY-BgW" id="LgT-N4-pl1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mqc-aW-4Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-290.39999999999998" y="406.14692653673166"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XyO-TY-n0P">
             <objects>
@@ -453,6 +557,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="app_logo" width="200" height="200"/>
         <image name="filter" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>

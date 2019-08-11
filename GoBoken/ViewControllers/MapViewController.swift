@@ -15,6 +15,15 @@ class MapViewController: UIViewController, MKMapViewDelegate {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+//    let defaults = UserDefaults.standard
+//    let Name = defaults.string(forKey: "Name")
+//    print(Name)
+//    let Age = defaults.string(forKey: "Age")
+//    print(Age)
+//    let Gender = defaults.string(forKey: "Gender")
+//    print(Gender)
+    
     mapView.centerOnHoboken()
     addAnnotations()
     setupNavigationBarItems()

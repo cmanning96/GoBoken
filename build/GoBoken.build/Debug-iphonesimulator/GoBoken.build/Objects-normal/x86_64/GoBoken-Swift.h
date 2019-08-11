@@ -204,9 +204,23 @@ SWIFT_CLASS("_TtC7GoBoken11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
+@class UITextField;
+@class UISegmentedControl;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC7GoBoken27CreateProfileViewController")
+@interface CreateProfileViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified Name;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified Age;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified Gender;
+- (void)viewDidLoad;
+- (IBAction)SaveProfile:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
 
 SWIFT_CLASS("_TtC7GoBoken20FilterViewController")
 @interface FilterViewController : UIViewController
