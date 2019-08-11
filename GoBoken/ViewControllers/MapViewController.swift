@@ -10,24 +10,24 @@ import UIKit
 import MapKit
 
 class MapViewController: UIViewController, MKMapViewDelegate {
-  
-  @IBOutlet private var mapView: MKMapView!
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
     
-//    let defaults = UserDefaults.standard
-//    let Name = defaults.string(forKey: "Name")
-//    print(Name)
-//    let Age = defaults.string(forKey: "Age")
-//    print(Age)
-//    let Gender = defaults.string(forKey: "Gender")
-//    print(Gender)
+    @IBOutlet private var mapView: MKMapView!
     
-    mapView.centerOnHoboken()
-    addAnnotations()
-    setupNavigationBarItems()
-  }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //    let defaults = UserDefaults.standard
+        //    let Name = defaults.string(forKey: "Name")
+        //    print(Name)
+        //    let Age = defaults.string(forKey: "Age")
+        //    print(Age)
+        //    let Gender = defaults.string(forKey: "Gender")
+        //    print(Gender)
+        
+        mapView.centerOnHoboken()
+        addAnnotations()
+        setupNavigationBarItems()
+    }
     
     private func setupNavigationBarItems() {
         let image = UIImage(named: "app_logo")
@@ -36,18 +36,18 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         titleImageView.contentMode = .scaleAspectFit
         navigationItem.titleView = titleImageView
     }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    mapView.removeAnnotations(mapView.annotations)
-    addAnnotations()
-  }
-  
-  func addAnnotations() -> Void {
-    let places = SampleLocations.getLocationsThatMatchUserPreferences()
-    for location in places {
-      mapView.addAnnotationForLocation(location: location)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mapView.removeAnnotations(mapView.annotations)
+        addAnnotations()
     }
-  }
-  
+    
+    func addAnnotations() -> Void {
+        let places = SampleLocations.getLocationsThatMatchUserPreferences()
+        for location in places {
+            mapView.addAnnotationForLocation(location: location)
+        }
+    }
+    
 }

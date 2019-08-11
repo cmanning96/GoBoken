@@ -9,21 +9,21 @@
 import MapKit
 
 class MapAnnotation: NSObject, MKAnnotation {
-  
-  var location: Location
-  var coordinate: CLLocationCoordinate2D
-  var subtitle: String?
-  
-  init(location: Location) {
-    if let coords = location.coordindates {
-      self.coordinate = coords
-    } else {
-      print("No coordinates for " + location.name + " upon initializing MapAnnotation")
-      self.coordinate = CLLocationCoordinate2D()
+    
+    var location: Location
+    var coordinate: CLLocationCoordinate2D
+    var subtitle: String?
+    
+    init(location: Location) {
+        if let coords = location.coordindates {
+            self.coordinate = coords
+        } else {
+            print("No coordinates for " + location.name + " upon initializing MapAnnotation")
+            self.coordinate = CLLocationCoordinate2D()
+        }
+        self.location = location
+        self.subtitle = location.name
     }
-    self.location = location
-    self.subtitle = location.name
-  }
-
-  
+    
+    
 }

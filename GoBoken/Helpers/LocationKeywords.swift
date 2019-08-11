@@ -9,8 +9,8 @@
 import Foundation
 
 enum LocationKeywords: CaseIterable {
-  case dining
-  case hotel
-  case landmark
-  case coffee
+    case dining
+    case hotel
+    case landmark
+    case coffee
 }

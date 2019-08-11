@@ -9,8 +9,6 @@
 import Foundation
 
 struct UserFilterPreferences {
-  
-  static var maximumDistance: Float = 2.0
-  static var chosenKeywords = LocationKeywords.allCases
-  
+    static var maximumDistance: Float = 2.0
+    static var chosenKeywords = LocationKeywords.allCases
 }

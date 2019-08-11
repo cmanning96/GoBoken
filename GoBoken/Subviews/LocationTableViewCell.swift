@@ -9,18 +9,18 @@
 import UIKit
 
 class LocationTableViewCell: UITableViewCell {
-  
-  @IBOutlet private var nameLabel: UILabel!
-  @IBOutlet private var addressLabel: UILabel!
-  @IBOutlet private var locationImageView: UIImageView!
-  @IBOutlet private var keywordsLabel: UILabel!
-  
-  func setCell(location: Location) {
-    self.nameLabel.text = location.name
-    self.addressLabel.text = location.address
-    self.locationImageView.image = location.image
-    self.keywordsLabel.text = location.getKeywordString()
-    self.imageView?.contentMode = .scaleAspectFit
-  }
-  
+    
+    @IBOutlet private var nameLabel: UILabel!
+    @IBOutlet private var addressLabel: UILabel!
+    @IBOutlet private var locationImageView: UIImageView!
+    @IBOutlet private var keywordsLabel: UILabel!
+    
+    func setCell(location: Location) {
+        self.nameLabel.text = location.name
+        self.addressLabel.text = location.address
+        self.locationImageView.image = location.image
+        self.keywordsLabel.text = location.getKeywordString()
+        self.imageView?.contentMode = .scaleAspectFit
+    }
+    
 }
