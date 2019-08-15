@@ -85,6 +85,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         searchBar.resignFirstResponder()
         dismiss(animated: true, completion: nil)
         
+        
         let searchText = String(searchBar.text!)
         let defaults = UserDefaults.standard
         defaults.set(searchText, forKey: "Search")

@@ -41,11 +41,11 @@ class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegat
     }
     
     private func setupNavigationBarItems() {
-        let image = UIImage(named: "app_logo")
+        let image = UIImage(named: "new_logo")
         let titleImageView = UIImageView(image : image)
-        titleImageView.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
+        titleImageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         titleImageView.contentMode = .scaleAspectFit
-        navigationItem.titleView = titleImageView
+//        navigationItem.titleView = titleImageView
     }
     
     override func viewWillAppear(_ animated: Bool) {
