@@ -258,11 +258,15 @@ SWIFT_CLASS("_TtC7GoBoken13MapAnnotation")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UISearchBar;
 
 SWIFT_CLASS("_TtC7GoBoken17MapViewController")
-@interface MapViewController : UIViewController <MKMapViewDelegate>
+@interface MapViewController : UIViewController <MKMapViewDelegate, UISearchBarDelegate>
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+- (IBAction)searchBtnClicked:(id _Nonnull)sender;
+- (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -270,12 +274,15 @@ SWIFT_CLASS("_TtC7GoBoken17MapViewController")
 @class UITableView;
 
 SWIFT_CLASS("_TtC7GoBoken19TableViewController")
-@interface TableViewController : UITableViewController
+@interface TableViewController : UITableViewController <UISearchBarDelegate>
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)SearchTableClicked:(id _Nonnull)sender;
+- (void)searchBarCancelButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

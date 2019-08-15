@@ -13,13 +13,16 @@
         <!--Map-->
         <scene sceneID="Nhm-3c-GVX">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" title="Map" id="Qrd-3H-gtQ" customClass="MapViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="MapViewController" storyboardIdentifier="MapViewController" title="Map" id="Qrd-3H-gtQ" customClass="MapViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gvF-0T-rcw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aZM-wq-T7L">
                                 <rect key="frame" x="0.0" y="64" width="375" height="534"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Qrd-3H-gtQ" id="Ps8-dX-7do"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,12 +47,20 @@
                         <viewLayoutGuide key="safeArea" id="cTm-Ar-eAF"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="zMm-ju-6l9">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" image="filter" id="EcS-HU-gA8">
-                            <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="-5"/>
-                            <connections>
-                                <segue destination="hVz-LJ-abU" kind="show" id="bFX-Ca-Cd8"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="search" id="RjM-zU-fLq">
+                                <connections>
+                                    <action selector="searchBtnClicked:" destination="Qrd-3H-gtQ" id="SjZ-Kd-CoO"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Filter" image="filter" id="EcS-HU-gA8">
+                                <inset key="imageInsets" minX="30" minY="0.0" maxX="0.0" maxY="-11"/>
+                                <connections>
+                                    <action selector="searchBtn:" destination="Qrd-3H-gtQ" id="2tr-RF-v2x"/>
+                                    <segue destination="hVz-LJ-abU" kind="show" id="bFX-Ca-Cd8"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="aZM-wq-T7L" id="i3d-KX-ZMR"/>
@@ -198,7 +209,7 @@
         <!--Table-->
         <scene sceneID="44f-iv-wMZ">
             <objects>
-                <tableViewController storyboardIdentifier="TableViewController" id="hDJ-Kk-Nft" customClass="TableViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="TableViewController" storyboardIdentifier="TableViewController" id="hDJ-Kk-Nft" customClass="TableViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ibS-eo-SaW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,12 +286,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Table" id="HUf-Cf-HgH">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" image="filter" id="XAJ-Mh-DFJ">
-                            <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="-5"/>
-                            <connections>
-                                <segue destination="hVz-LJ-abU" kind="show" id="AUH-5x-MIs"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="search" id="NBq-3m-yDm">
+                                <connections>
+                                    <action selector="SearchTableClicked:" destination="hDJ-Kk-Nft" id="mWc-9j-onG"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Filter" image="filter" id="XAJ-Mh-DFJ">
+                                <inset key="imageInsets" minX="30" minY="0.0" maxX="0.0" maxY="-11"/>
+                                <connections>
+                                    <segue destination="hVz-LJ-abU" kind="show" id="AUH-5x-MIs"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0F-8C-fgq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
     
     @IBOutlet private var mapView: MKMapView!
     
@@ -25,7 +25,18 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         //    print(Gender)
         
         mapView.centerOnHoboken()
-        addAnnotations()
+        
+        let defaults = UserDefaults.standard
+        let Search = defaults.string(forKey: "Search")
+        if Search != nil {
+            let places = SampleLocations.getSearchResults(searchTxt: Search!)
+            for location in places {
+                mapView.addAnnotationForLocation(location: location)
+            }
+        } else {
+            addAnnotations()
+        }
+        
         setupNavigationBarItems()
     }
     
@@ -40,7 +51,17 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         mapView.removeAnnotations(mapView.annotations)
-        addAnnotations()
+        //addAnnotations()
+        let defaults = UserDefaults.standard
+        let Search = defaults.string(forKey: "Search")
+        if Search != nil {
+            let places = SampleLocations.getSearchResults(searchTxt: Search!)
+            for location in places {
+                mapView.addAnnotationForLocation(location: location)
+            }
+        } else {
+            addAnnotations()
+        }
     }
     
     func addAnnotations() -> Void {
@@ -50,4 +71,50 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
+    @IBAction func searchBtnClicked(_ sender: Any) {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.delegate = self
+        present(searchController, animated: true, completion: nil)
+        
+        let defaults = UserDefaults.standard
+        let Search = defaults.string(forKey: "Search")
+        if Search != nil {
+            searchController.searchBar.text = Search!
+        }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        let defaults = UserDefaults.standard
+        defaults.set(nil, forKey: "Search")
+        addAnnotations()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        
+        self.view.addSubview(activityIndicator)
+        searchBar.resignFirstResponder()
+        dismiss(animated: true, completion: nil)
+        
+        let allAnnotations = mapView.annotations
+        mapView.removeAnnotations(allAnnotations)
+        
+        let searchText = String(searchBar.text!)
+        let defaults = UserDefaults.standard
+        defaults.set(searchText, forKey: "Search")
+        
+        let places = SampleLocations.getSearchResults(searchTxt: searchText)
+        
+        activityIndicator.stopAnimating()
+        UIApplication.shared.endIgnoringInteractionEvents()
+        
+        for location in places {
+            mapView.addAnnotationForLocation(location: location)
+        }
+    }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, UISearchBarDelegate {
     
     var displayedLocations: [Location]!
     
@@ -18,7 +18,13 @@ class TableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setTableData()
+        let defaults = UserDefaults.standard
+        let Search = defaults.string(forKey: "Search")
+        if Search != nil {
+            setSearchResults(searchTxt: Search!)
+        } else {
+            setTableData()
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,5 +50,49 @@ class TableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    func setSearchResults(searchTxt: String) -> Void {
+        displayedLocations = SampleLocations.getSearchResults(searchTxt: searchTxt)
+        tableView.reloadData()
+    }
+    
+    @IBAction func SearchTableClicked(_ sender: Any) {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.delegate = self
+        present(searchController, animated: true, completion: nil)
+        
+        let defaults = UserDefaults.standard
+        let Search = defaults.string(forKey: "Search")
+        if Search != nil {
+            searchController.searchBar.text = Search!
+        }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        let defaults = UserDefaults.standard
+        defaults.set(nil, forKey: "Search")
+        setTableData()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        let activityIndicator = UIActivityIndicatorView()
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        activityIndicator.center = self.view.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        
+        self.view.addSubview(activityIndicator)
+        searchBar.resignFirstResponder()
+        dismiss(animated: true, completion: nil)
+        
+        let searchText = String(searchBar.text!)
+        let defaults = UserDefaults.standard
+        defaults.set(searchText, forKey: "Search")
+        
+        setSearchResults(searchTxt: searchText)
+        
+        activityIndicator.stopAnimating()
+        UIApplication.shared.endIgnoringInteractionEvents()
+    }
 }
 

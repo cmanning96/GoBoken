@@ -19,10 +19,12 @@ depends-top-level:
 - "Location"
 - "LocationKeywords"
 - "SampleLocations"
+- "String"
 - "StringLiteralType"
 - "UIImage"
 - "UnicodeScalarType"
 - !private "UserFilterPreferences"
+- !private "||"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "contains"]
@@ -49,6 +51,7 @@ depends-member:
 - !private ["Sl", "contains"]
 - !private ["Sl", "filter"]
 - !private ["Sl", "isEmpty"]
+- !private ["SL", "contains"]
 - !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "contains"]
 - !private ["10Foundation15ContiguousBytesP", "filter"]
@@ -89,6 +92,7 @@ depends-member:
 - ["SQ", "coffee"]
 - !private ["SQ", "contains"]
 - !private ["SQ", "coordindates"]
+- !private ["SQ", "description"]
 - ["SQ", "dining"]
 - !private ["SQ", "distance"]
 - !private ["SQ", "filter"]
@@ -99,19 +103,25 @@ depends-member:
 - ["SQ", "landmark"]
 - !private ["SQ", "latitude"]
 - !private ["SQ", "longitude"]
+- !private ["SQ", "name"]
 - !private ["s25ExpressibleByArrayLiteralP", "contains"]
 - !private ["s25ExpressibleByArrayLiteralP", "filter"]
 - !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "contains"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "contains"]
 - !private ["s23ExpressibleByNilLiteralP", "latitude"]
 - !private ["s23ExpressibleByNilLiteralP", "longitude"]
+- !private ["s32ExpressibleByStringInterpolationP", "contains"]
+- !private ["s26ExpressibleByStringLiteralP", "contains"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "contains"]
 - !private ["Sf", "init"]
 - !private ["SF", "init"]
 - ["SH", "coffee"]
 - !private ["SH", "contains"]
 - !private ["SH", "coordindates"]
+- !private ["SH", "description"]
 - ["SH", "dining"]
 - !private ["SH", "distance"]
 - !private ["SH", "filter"]
@@ -122,33 +132,47 @@ depends-member:
 - ["SH", "landmark"]
 - !private ["SH", "latitude"]
 - !private ["SH", "longitude"]
+- !private ["SH", "name"]
 - !private ["7GoBoken8LocationC", "coordindates"]
+- !private ["7GoBoken8LocationC", "description"]
 - ["7GoBoken8LocationC", "init"]
 - !private ["7GoBoken8LocationC", "keywords"]
+- !private ["7GoBoken8LocationC", "name"]
 - ["7GoBoken16LocationKeywordsO", "coffee"]
 - !private ["7GoBoken16LocationKeywordsO", "deinit"]
 - ["7GoBoken16LocationKeywordsO", "dining"]
 - ["7GoBoken16LocationKeywordsO", "hotel"]
 - ["7GoBoken16LocationKeywordsO", "landmark"]
+- !private ["s25LosslessStringConvertibleP", "contains"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "contains"]
 - !private ["SM", "contains"]
 - !private ["SM", "filter"]
 - !private ["SM", "isEmpty"]
 - !private ["10Foundation19MutableDataProtocolP", "contains"]
 - !private ["10Foundation19MutableDataProtocolP", "filter"]
 - !private ["10Foundation19MutableDataProtocolP", "isEmpty"]
+- !private ["So8NSCodingP", "contains"]
 - !private ["So8NSCodingP", "distance"]
 - ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "contains"]
 - !private ["So9NSCopyingP", "distance"]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So21NSItemProviderReadingP", "contains"]
 - ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "contains"]
 - ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "contains"]
+- !private ["So8NSObjectC", "contains"]
 - !private ["So8NSObjectC", "distance"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectP", "contains"]
 - !private ["So8NSObjectP", "distance"]
 - ["So8NSObjectP", "init"]
+- !private ["So14NSSecureCodingP", "contains"]
 - !private ["So14NSSecureCodingP", "distance"]
 - ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "contains"]
 - !private ["Sj", "init"]
 - !private ["Sq", "contains"]
 - !private ["Sq", "latitude"]
@@ -166,10 +190,12 @@ depends-member:
 - ["7GoBoken15SampleLocationsV", "Float"]
 - ["7GoBoken15SampleLocationsV", "Location"]
 - ["7GoBoken15SampleLocationsV", "LocationKeywords"]
+- ["7GoBoken15SampleLocationsV", "String"]
 - ["7GoBoken15SampleLocationsV", "UIImage"]
 - !private ["7GoBoken15SampleLocationsV", "UserFilterPreferences"]
 - ["7GoBoken15SampleLocationsV", "allLocations"]
 - ["7GoBoken15SampleLocationsV", "getLocationsThatMatchUserPreferences"]
+- ["7GoBoken15SampleLocationsV", "getSearchResults"]
 - ["7GoBoken15SampleLocationsV", "init"]
 - !private ["7GoBoken15SampleLocationsV", "metersToDistance"]
 - !private ["ST", "contains"]
@@ -177,6 +203,10 @@ depends-member:
 - !private ["ST", "isEmpty"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "init"]
+- !private ["SS", "contains"]
+- !private ["Sy", "contains"]
+- !private ["s16TextOutputStreamP", "contains"]
+- !private ["s20TextOutputStreamableP", "contains"]
 - !private ["s20TextOutputStreamableP", "init"]
 - ["So29UIAccessibilityIdentificationP", "init"]
 - ["So7UIImageC", "init"]
@@ -188,12 +218,16 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "isEmpty"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "contains"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "contains"]
 - !private ["s24_DestructorSafeContainerP", "filter"]
 - !private ["s24_DestructorSafeContainerP", "isEmpty"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "contains"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "contains"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "contains"]
 - ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "contains"]
 - !private ["s19_HasContiguousBytesP", "filter"]
@@ -202,6 +236,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "distance"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
@@ -230,24 +265,31 @@ depends-nominal:
 - !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "Sf"
 - !private "SF"
 - "SH"
 - "7GoBoken8LocationC"
 - "7GoBoken16LocationKeywordsO"
 - !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So21NSItemProviderReadingP"
 - "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - !private "Sj"
 - !private "Sq"
 - !private "Sk"
@@ -257,6 +299,9 @@ depends-nominal:
 - !private "ST"
 - !private "s13SignedNumericP"
 - !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "So29UIAccessibilityIdentificationP"
 - "So7UIImageC"
@@ -267,8 +312,11 @@ depends-nominal:
 - !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s26_ExpressibleByImageLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
@@ -304,4 +352,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bb812aa6a4b2b1e304a9f20e987525b8"
+interface-hash: "b427b98ee64b1984b58681fef253f2df"
