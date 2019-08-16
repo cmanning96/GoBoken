@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "a360237b663bfd2fa05edf354ebfcf41"
-build_time: [1565845982, 995251000]
+build_time: [1565931676, 240103000]
 inputs:
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Helpers/SampleLocations.swift": [1565837644, 304718870]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Helpers/MapViewExtension.swift": [1565545761, 379132305]
@@ -8,7 +8,9 @@ inputs:
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Helpers/UserFilterPreferences.swift": [1565837467, 109873220]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Subviews/LocationTableViewCell.swift": [1565545736, 264136070]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/ViewControllers/TableViewController.swift": [1565842253, 347831686]
+  "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/ViewControllers/RecommendationsViewController.swift": [1565931676, 163426991]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/ViewControllers/LocationViewController.swift": [1565545716, 722274992]
+  "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Subviews/RecommendationsTableViewCell.swift": [1565931227, 486220272]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/ViewControllers/FilterViewController.swift": [1565545723, 925324284]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Classes/Location.swift": [1565545753, 811032604]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/AppDelegate.swift": [1565842039, 550122520]

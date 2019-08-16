@@ -54,7 +54,11 @@
                                     <action selector="searchBtnClicked:" destination="Qrd-3H-gtQ" id="SjZ-Kd-CoO"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Recm" image="star" id="ZGB-3t-HU4"/>
+                            <barButtonItem title="Recm" image="star" id="ZGB-3t-HU4">
+                                <connections>
+                                    <segue destination="EBI-hF-E3g" kind="show" id="fp3-MB-rG2"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Filter" image="filter" id="EcS-HU-gA8">
                                 <inset key="imageInsets" minX="30" minY="0.0" maxX="0.0" maxY="-11"/>
                                 <connections>
@@ -71,6 +75,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s0t-2h-8YG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2756" y="790.25487256371821"/>
+        </scene>
+        <!--Recommendations-->
+        <scene sceneID="gvg-Xi-Dt9">
+            <objects>
+                <tableViewController id="EBI-hF-E3g" customClass="RecommendationsViewController" customModule="GoBoken" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JiW-FF-aDF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="2bM-o9-046" customClass="RecommendationsTableViewCell" customModule="GoBoken" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2bM-o9-046" id="Egh-ez-mYg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ubg-Sm-tE4">
+                                            <rect key="frame" x="26" y="26" width="125" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="3ZU-x6-5kU"/>
+                                                <constraint firstAttribute="width" constant="125" id="cxh-ov-uyf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Parks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ub-JX-8xo">
+                                            <rect key="frame" x="179" y="51" width="42.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="9Ub-JX-8xo" secondAttribute="bottom" constant="10" id="2sK-fY-WBs"/>
+                                        <constraint firstItem="9Ub-JX-8xo" firstAttribute="leading" secondItem="ubg-Sm-tE4" secondAttribute="trailing" constant="30" id="5CB-81-FeG"/>
+                                        <constraint firstItem="ubg-Sm-tE4" firstAttribute="top" secondItem="Egh-ez-mYg" secondAttribute="topMargin" constant="15.26" id="6Cj-SB-7yF"/>
+                                        <constraint firstItem="9Ub-JX-8xo" firstAttribute="top" secondItem="Egh-ez-mYg" secondAttribute="topMargin" id="G9O-3o-Hkm"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ubg-Sm-tE4" secondAttribute="bottom" constant="14.24" id="MZM-EP-vVb"/>
+                                        <constraint firstItem="ubg-Sm-tE4" firstAttribute="leading" secondItem="Egh-ez-mYg" secondAttribute="leadingMargin" constant="10" id="fJ9-Jd-cbC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="RecmdImg" destination="ubg-Sm-tE4" id="3aG-MZ-CS5"/>
+                                    <outlet property="RecmdLbl" destination="9Ub-JX-8xo" id="8LR-CB-e2V"/>
+                                    <outlet property="recmdImg" destination="ubg-Sm-tE4" id="vPg-Yq-2Pf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="EBI-hF-E3g" id="HOP-nF-krn"/>
+                            <outlet property="delegate" destination="EBI-hF-E3g" id="MGZ-50-x7e"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Recommendations" id="IB8-1a-jmO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ov5-dX-f1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2756" y="1659.2203898050975"/>
         </scene>
         <!--Filter-->
         <scene sceneID="S2Y-PS-pNA">

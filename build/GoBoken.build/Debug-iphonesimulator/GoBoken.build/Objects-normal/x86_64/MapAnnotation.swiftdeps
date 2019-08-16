@@ -17,7 +17,6 @@ depends-top-level:
 - "MapAnnotation"
 - "NSObject"
 - "String"
-- !private "StringLiteralType"
 - !private "print"
 depends-member:
 - !private ["So22CLLocationCoordinate2DV", "init"]
