@@ -26,6 +26,7 @@
 		F7B0DE8423007E41002500AE /* CreateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DE8323007E41002500AE /* CreateProfileController.swift */; };
 		F7C37BD2230665860082EE88 /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C37BD1230665860082EE88 /* RecommendationsViewController.swift */; };
 		F7C37BD623066C580082EE88 /* RecommendationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C37BD523066C580082EE88 /* RecommendationsTableViewCell.swift */; };
+		F7C37BD82310E40B0082EE88 /* UpdateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C37BD72310E40B0082EE88 /* UpdateProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		F7B0DE8323007E41002500AE /* CreateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileController.swift; sourceTree = "<group>"; };
 		F7C37BD1230665860082EE88 /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 		F7C37BD523066C580082EE88 /* RecommendationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsTableViewCell.swift; sourceTree = "<group>"; };
+		F7C37BD72310E40B0082EE88 /* UpdateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				AAFC4DEF22DFBDFF009D6ECB /* FilterViewController.swift */,
 				F7B0DE8323007E41002500AE /* CreateProfileController.swift */,
 				F7C37BD1230665860082EE88 /* RecommendationsViewController.swift */,
+				F7C37BD72310E40B0082EE88 /* UpdateProfileController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				AA5E6A3822DCE2D200F5982B /* AppDelegate.swift in Sources */,
 				AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */,
 				F7B0DE8423007E41002500AE /* CreateProfileController.swift in Sources */,
+				F7C37BD82310E40B0082EE88 /* UpdateProfileController.swift in Sources */,
 				AA5E6A5C22DD343700F5982B /* MapViewController.swift in Sources */,
 				AA5E6A5E22DD506500F5982B /* MapAnnotation.swift in Sources */,
 			);

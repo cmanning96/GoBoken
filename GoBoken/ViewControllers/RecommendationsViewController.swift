@@ -10,7 +10,7 @@ import UIKit
 
 class RecommendationsViewController: UITableViewController {
 
-    let RecommendationsListLbl = ["Places of Interest", "Historical Places", "Food"]
+    let RecommendationsListLbl = ["Interesting", "Historical", "Food"]
     let RecommendationsListImg = ["POI.jpg", "History.jpg", "Food.png"]
     
     override func viewDidLoad() {

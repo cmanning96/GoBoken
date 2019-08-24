@@ -320,6 +320,18 @@ SWIFT_CLASS("_TtC7GoBoken12ToggleButton")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+
+SWIFT_CLASS("_TtC7GoBoken23UpdateProfileController")
+@interface UpdateProfileController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified Name;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified Age;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified Gender;
+- (void)viewDidLoad;
+- (IBAction)UpdateButtonClicked:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
