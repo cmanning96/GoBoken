@@ -16,6 +16,8 @@ class FilterViewController: UIViewController {
     @IBOutlet private var diningToggle: ToggleButton!
     @IBOutlet private var hotelToggle: ToggleButton!
     @IBOutlet private var landmarkToggle: ToggleButton!
+    @IBOutlet private var barToggle: ToggleButton!
+    @IBOutlet private var historicalToggle: ToggleButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,9 @@ class FilterViewController: UIViewController {
             LocationKeywords.coffee : coffeeToggle,
             LocationKeywords.dining : diningToggle,
             LocationKeywords.hotel : hotelToggle,
-            LocationKeywords.landmark : landmarkToggle
+            LocationKeywords.landmark : landmarkToggle,
+            LocationKeywords.bar : barToggle,
+            LocationKeywords.historical : historicalToggle
         ]
         for keyword in LocationKeywords.allCases {
             guard let button = keywordButtonDict[keyword] else {
@@ -55,9 +59,11 @@ class FilterViewController: UIViewController {
             coffeeToggle : LocationKeywords.coffee,
             diningToggle : LocationKeywords.dining,
             hotelToggle : LocationKeywords.hotel,
-            landmarkToggle : LocationKeywords.landmark
+            landmarkToggle : LocationKeywords.landmark,
+            barToggle : .bar,
+            historicalToggle : .historical
         ]
-        for button in [coffeeToggle, diningToggle, hotelToggle, landmarkToggle] {
+        for button in [coffeeToggle, diningToggle, hotelToggle, landmarkToggle, historicalToggle, barToggle] {
             if button!.isOn {
                 keywords.append(buttonKeywordDict[button!]!)
             }

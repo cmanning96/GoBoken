@@ -14,6 +14,5 @@ enum LocationKeywords: CaseIterable {
     case landmark
     case coffee
     case historical
-    case food
-    case interesting
+    case bar
 }
