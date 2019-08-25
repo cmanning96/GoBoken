@@ -283,6 +283,7 @@
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xSy-NP-JM4">
                                 <rect key="frame" x="14" y="128" width="347" height="30"/>
+                                <color key="tintColor" red="0.01096656627" green="0.38371263370000003" blue="0.63495912180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="Ddx-Bv-C5n"/>
                                 </constraints>
@@ -318,7 +319,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgw-gg-VFV" customClass="ToggleButton" customModule="GoBoken" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="205" width="200" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.01096656627" green="0.38371263370000003" blue="0.63495912180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="4I8-Nd-YMZ"/>
                                     <constraint firstAttribute="width" constant="200" id="cvr-fi-aY4"/>
@@ -330,7 +331,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZR-d0-xaB" customClass="ToggleButton" customModule="GoBoken" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="249" width="200" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.01096656627" green="0.38371263370000003" blue="0.63495912180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Hotels">
                                     <color key="titleColor" red="0.80520959560000005" green="0.81095084930000005" blue="0.82817461059999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -338,7 +339,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc3-Zo-ROy" customClass="ToggleButton" customModule="GoBoken" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="337" width="200" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.01096656627" green="0.38371263370000003" blue="0.63495912180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Landmarks">
                                     <color key="titleColor" red="0.80520959560000005" green="0.81095084930000005" blue="0.82817461059999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -346,7 +347,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1K-j8-Owy" customClass="ToggleButton" customModule="GoBoken" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="293" width="200" height="36"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.01096656627" green="0.38371263370000003" blue="0.63495912180000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Coffee">
                                     <color key="titleColor" red="0.80520959560000005" green="0.81095084930000005" blue="0.82817461059999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -358,7 +359,7 @@
                                     <constraint firstAttribute="width" constant="60" id="67O-Ii-bec"/>
                                     <constraint firstAttribute="height" constant="30" id="8Y8-r4-XaL"/>
                                 </constraints>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Apply"/>
                                 <connections>
                                     <action selector="saveButtonTapped:" destination="hVz-LJ-abU" eventType="touchUpInside" id="G6o-j8-GQp"/>
                                 </connections>

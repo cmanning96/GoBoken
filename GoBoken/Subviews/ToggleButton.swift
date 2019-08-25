@@ -12,10 +12,10 @@ class ToggleButton: UIButton {
     
     var isOn: Bool!
     
-    var onBackgroundColor = UIColor.blue
+    var onBackgroundColor = #colorLiteral(red: 0, green: 0.3912910223, blue: 0.6550781727, alpha: 1)
     var onTextColor = UIColor.white
     var offBackgroundColor = UIColor.white
-    var offTextColor = UIColor.blue
+    var offTextColor = #colorLiteral(red: 0, green: 0.3912910223, blue: 0.6550781727, alpha: 1)
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
