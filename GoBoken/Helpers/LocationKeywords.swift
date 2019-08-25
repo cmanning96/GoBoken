@@ -13,4 +13,7 @@ enum LocationKeywords: CaseIterable {
     case hotel
     case landmark
     case coffee
+    case historical
+    case food
+    case interesting
 }

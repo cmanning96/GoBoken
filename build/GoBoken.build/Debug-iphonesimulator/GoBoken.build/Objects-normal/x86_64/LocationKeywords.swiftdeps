@@ -47,9 +47,12 @@ depends-member:
 - ["7GoBoken16LocationKeywordsO", "coffee"]
 - ["7GoBoken16LocationKeywordsO", "deinit"]
 - ["7GoBoken16LocationKeywordsO", "dining"]
+- ["7GoBoken16LocationKeywordsO", "food"]
 - ["7GoBoken16LocationKeywordsO", "hash"]
 - ["7GoBoken16LocationKeywordsO", "hashValue"]
+- ["7GoBoken16LocationKeywordsO", "historical"]
 - ["7GoBoken16LocationKeywordsO", "hotel"]
+- ["7GoBoken16LocationKeywordsO", "interesting"]
 - ["7GoBoken16LocationKeywordsO", "landmark"]
 depends-nominal:
 - "s12CaseIterableP"
@@ -87,4 +90,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6677d4de15b131bf38a7737c2379dfc9"
+interface-hash: "59e94ca89485b20ee2f7edd32c7a8dd5"

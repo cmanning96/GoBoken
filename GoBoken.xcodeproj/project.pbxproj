@@ -27,6 +27,7 @@
 		F7C37BD2230665860082EE88 /* RecommendationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C37BD1230665860082EE88 /* RecommendationsViewController.swift */; };
 		F7C37BD623066C580082EE88 /* RecommendationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C37BD523066C580082EE88 /* RecommendationsTableViewCell.swift */; };
 		F7C37BD82310E40B0082EE88 /* UpdateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C37BD72310E40B0082EE88 /* UpdateProfileController.swift */; };
+		F7C37BDA2312E1810082EE88 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C37BD92312E1810082EE88 /* TourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		F7C37BD1230665860082EE88 /* RecommendationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsViewController.swift; sourceTree = "<group>"; };
 		F7C37BD523066C580082EE88 /* RecommendationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsTableViewCell.swift; sourceTree = "<group>"; };
 		F7C37BD72310E40B0082EE88 /* UpdateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileController.swift; sourceTree = "<group>"; };
+		F7C37BD92312E1810082EE88 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				F7B0DE8323007E41002500AE /* CreateProfileController.swift */,
 				F7C37BD1230665860082EE88 /* RecommendationsViewController.swift */,
 				F7C37BD72310E40B0082EE88 /* UpdateProfileController.swift */,
+				F7C37BD92312E1810082EE88 /* TourViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				AA5E6A5A22DCF03100F5982B /* LocationViewController.swift in Sources */,
 				F7C37BD623066C580082EE88 /* RecommendationsTableViewCell.swift in Sources */,
 				AAFC4DF022DFBDFF009D6ECB /* FilterViewController.swift in Sources */,
+				F7C37BDA2312E1810082EE88 /* TourViewController.swift in Sources */,
 				AA5E6A4E22DCE31300F5982B /* Location.swift in Sources */,
 				AA5E6A3822DCE2D200F5982B /* AppDelegate.swift in Sources */,
 				AAFC4DEE22DFBB0F009D6ECB /* ToggleButton.swift in Sources */,

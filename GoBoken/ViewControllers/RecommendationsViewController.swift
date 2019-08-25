@@ -26,11 +26,18 @@ class RecommendationsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let recommendation = RecommendationsList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RecommendationsTableViewCell
-//        cell.setCell(location: location)
         cell.RecmdLbl.text = RecommendationsListLbl[indexPath.row]
         cell.RecmdImg.image = UIImage(named: RecommendationsListImg[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "tourView") as! TourViewController
+        let defaults = UserDefaults.standard
+        print(indexPath.row)
+        let idx:Int? = indexPath.row
+        defaults.set(idx, forKey: "RecommendationsListLblIdx")
+        present(vc, animated: true)
     }
 }

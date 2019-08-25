@@ -13,10 +13,13 @@ depends-top-level:
 - !private "CLGeocoder"
 - !private "CLLocation"
 - "CLLocationDistance"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "Location"
 - !private "MKCoordinateRegion"
 - "MKMapView"
 - !private "MapAnnotation"
+- !private "StringLiteralType"
 - "Void"
 - !private "print"
 depends-member:
