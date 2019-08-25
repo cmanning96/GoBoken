@@ -46,10 +46,7 @@ depends-member:
 - !private ["s7CVarArgP", "isEmpty"]
 - ["s12CaseIterableP", "coffee"]
 - ["s12CaseIterableP", "dining"]
-- ["s12CaseIterableP", "food"]
-- ["s12CaseIterableP", "historical"]
 - ["s12CaseIterableP", "hotel"]
-- ["s12CaseIterableP", "interesting"]
 - ["s12CaseIterableP", "landmark"]
 - !private ["Sl", "contains"]
 - !private ["Sl", "filter"]
@@ -99,11 +96,8 @@ depends-member:
 - ["SQ", "dining"]
 - !private ["SQ", "distance"]
 - !private ["SQ", "filter"]
-- ["SQ", "food"]
-- ["SQ", "historical"]
 - ["SQ", "hotel"]
 - ["SQ", "init"]
-- ["SQ", "interesting"]
 - !private ["SQ", "isEmpty"]
 - !private ["SQ", "keywords"]
 - ["SQ", "landmark"]
@@ -131,11 +125,8 @@ depends-member:
 - ["SH", "dining"]
 - !private ["SH", "distance"]
 - !private ["SH", "filter"]
-- ["SH", "food"]
-- ["SH", "historical"]
 - ["SH", "hotel"]
 - ["SH", "init"]
-- ["SH", "interesting"]
 - !private ["SH", "isEmpty"]
 - !private ["SH", "keywords"]
 - ["SH", "landmark"]
@@ -150,10 +141,7 @@ depends-member:
 - ["7GoBoken16LocationKeywordsO", "coffee"]
 - !private ["7GoBoken16LocationKeywordsO", "deinit"]
 - ["7GoBoken16LocationKeywordsO", "dining"]
-- ["7GoBoken16LocationKeywordsO", "food"]
-- ["7GoBoken16LocationKeywordsO", "historical"]
 - ["7GoBoken16LocationKeywordsO", "hotel"]
-- ["7GoBoken16LocationKeywordsO", "interesting"]
 - ["7GoBoken16LocationKeywordsO", "landmark"]
 - !private ["s25LosslessStringConvertibleP", "contains"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -364,4 +352,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bec8759d406914ffd73f3e30f89db9c3"
+interface-hash: "3e7302e37fa7f3092601ffbc3ef1450a"

@@ -54,11 +54,6 @@
                                     <action selector="searchBtnClicked:" destination="Qrd-3H-gtQ" id="SjZ-Kd-CoO"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Recm" image="star" id="ZGB-3t-HU4">
-                                <connections>
-                                    <segue destination="EBI-hF-E3g" kind="show" id="fp3-MB-rG2"/>
-                                </connections>
-                            </barButtonItem>
                             <barButtonItem title="Item" image="user-25" width="1" id="wpp-Ag-KJt">
                                 <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -504,11 +499,6 @@
                                     <action selector="SearchTableClicked:" destination="hDJ-Kk-Nft" id="mWc-9j-onG"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Item" image="star" id="s1v-vb-qkP">
-                                <connections>
-                                    <segue destination="EBI-hF-E3g" kind="show" id="4QP-I6-slg"/>
-                                </connections>
-                            </barButtonItem>
                             <barButtonItem title="Item" image="user-25" width="1" id="eLB-Oe-k64">
                                 <inset key="largeContentSizeImageInsets" minX="-1" minY="-1" maxX="0.0" maxY="0.0"/>
                                 <connections>
@@ -803,12 +793,10 @@
     <resources>
         <image name="app_logo" width="200" height="200"/>
         <image name="filter" width="50" height="50"/>
-        <image name="star" width="32" height="32"/>
         <image name="user-25" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AUH-5x-MIs"/>
         <segue reference="MW1-Cb-MH1"/>
-        <segue reference="4QP-I6-slg"/>
     </inferredMetricsTieBreakers>
 </document>

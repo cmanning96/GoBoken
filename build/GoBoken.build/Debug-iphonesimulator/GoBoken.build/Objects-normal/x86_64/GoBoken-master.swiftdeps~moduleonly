@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "a360237b663bfd2fa05edf354ebfcf41"
-build_time: [1566756204, 175593000]
+build_time: [1566762069, 937660000]
 inputs:
-  "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Helpers/SampleLocations.swift": [1566755349, 769923837]
+  "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Helpers/SampleLocations.swift": [1566762068, 520274672]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Helpers/MapViewExtension.swift": [1565545761, 379132305]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Helpers/LocationKeywords.swift": [1566754592, 805823717]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Helpers/UserFilterPreferences.swift": [1565837467, 109873220]
@@ -12,7 +12,7 @@ inputs:
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/ViewControllers/LocationViewController.swift": [1565545716, 722274992]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Subviews/RecommendationsTableViewCell.swift": [1565931227, 486220272]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/ViewControllers/FilterViewController.swift": [1565545723, 925324284]
-  "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/ViewControllers/TourViewController.swift": [1566756202, 509558315]
+  "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/ViewControllers/TourViewController.swift": [1566761909, 106910028]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Classes/Location.swift": [1565545753, 811032604]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/AppDelegate.swift": [1566617990, 781531197]
   "/Users/gopy/Desktop/iOS Apps/github/GoBoken/GoBoken/Subviews/ToggleButton.swift": [1565545748, 93927618]
